@@ -1,0 +1,4 @@
+module hcapiplugin {
+    umbrella "/Users/andreas/Developer/EmojiJournalServer/.build/checkouts/omr-agentcore/src/hcapiplugin/include"
+    export *
+}
