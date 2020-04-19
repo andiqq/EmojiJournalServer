@@ -28,7 +28,7 @@ This application has been generated with the following capabilities and services
 ### Run
 To build and run the application:
 1. `swift build`
-1. `.build/debug/EmojiJournalServerScratch`
+1. `.build/debug/EmojiJournalServer`
 
 #### Docker
 A description of the files related to Docker can be found in the [Docker files](#docker-files) section. To build the two Docker images, run the following commands from the root directory of the project.

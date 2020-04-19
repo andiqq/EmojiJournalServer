@@ -2,8 +2,8 @@
 applications:
 - instances: 1
   timeout: 180
-  name: EmojiJournalServerScratch
+  name: EmojiJournalServer
   buildpack: swift_buildpack
-  command: 'EmojiJournalServerScratch'
+  command: 'EmojiJournalServer'
   memory: 128M
   random-route: true

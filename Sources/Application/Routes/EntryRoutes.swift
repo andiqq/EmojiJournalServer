@@ -14,6 +14,7 @@ private var dataStore = [String: JournalEntry]()
 func initializeEntryRoutes(app: App) {
     app.router.get("/entries", handler: getAllEntries)
     app.router.post("/entries", handler: addEntry)
+    app.router.delete("/entries", handler: deleteEntry)
     
     Log.info("Journal entry routes created")
 }
@@ -30,4 +31,10 @@ func addEntry(entry: JournalEntry, completion: @escaping
     newEntry.id = String(dataStore.count + 1)
     dataStore[newEntry.id!] = newEntry
     completion(newEntry, nil)
+}
+
+func deleteEntry(id: String, completion: @escaping
+    (RequestError?) -> Void) {
+    dataStore[id] = nil
+    completion(nil)
 }
